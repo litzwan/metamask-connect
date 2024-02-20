@@ -26,9 +26,6 @@ import DisconnectedContent from '@/components/DisconnectedContent.vue';
 import useWallet from '@/lib/hooks/useWallet';
 import useChain from '@/lib/hooks/useChain';
 import useBalance from '@/lib/hooks/useBalance';
-import ethersProvider from './lib/ethersProvider';
-import { BrowserProvider } from 'ethers';
-import { ref } from 'vue';
 
 const { wallet, connect, disconnect } = useWallet(onWalletDisconnect);
 const { currentChain, switchChain, setChain, onDisconnect: chainOnDisconnect } = useChain();
